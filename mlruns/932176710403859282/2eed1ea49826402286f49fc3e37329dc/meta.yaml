@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/932176710403859282/2eed1ea49826402286f49fc3e37329dc/artifacts
+end_time: 1757912307660
+entry_point_name: ''
+experiment_id: '932176710403859282'
+lifecycle_stage: active
+run_id: 2eed1ea49826402286f49fc3e37329dc
+run_name: calm-donkey-875
+run_uuid: 2eed1ea49826402286f49fc3e37329dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757912307620
+status: 3
+tags: []
+user_id: computer

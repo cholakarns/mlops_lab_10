@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/929962870996651919/5ebd3e7a406e4ab2b6f99061348beedb/artifacts
+end_time: 1757913031889
+entry_point_name: ''
+experiment_id: '929962870996651919'
+lifecycle_stage: active
+run_id: 5ebd3e7a406e4ab2b6f99061348beedb
+run_name: 03_train_evaluate
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757913028415
+status: 3
+tags: []
+user_id: computer

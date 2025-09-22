@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/929962870996651919/models/m-6aa5cc67f13a47f08660176cd132b0ca/artifacts
+creation_timestamp: 1757913028547
+experiment_id: '929962870996651919'
+last_updated_timestamp: 1757913031844
+model_id: m-6aa5cc67f13a47f08660176cd132b0ca
+model_type: null
+name: model
+source_run_id: 5ebd3e7a406e4ab2b6f99061348beedb
+status: 2
+status_message: null

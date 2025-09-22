@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/473313537028080866/411469b2b11e44ec9d161c4e616f2a1b/artifacts
+end_time: 1757913000724
+entry_point_name: ''
+experiment_id: '473313537028080866'
+lifecycle_stage: active
+run_id: 411469b2b11e44ec9d161c4e616f2a1b
+run_name: 02_data_preprocessing
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757913000670
+status: 3
+tags: []
+user_id: computer

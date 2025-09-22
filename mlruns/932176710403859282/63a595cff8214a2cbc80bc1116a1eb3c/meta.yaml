@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/932176710403859282/63a595cff8214a2cbc80bc1116a1eb3c/artifacts
+end_time: 1757911457162
+entry_point_name: ''
+experiment_id: '932176710403859282'
+lifecycle_stage: active
+run_id: 63a595cff8214a2cbc80bc1116a1eb3c
+run_name: whimsical-gnu-287
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757911457103
+status: 3
+tags: []
+user_id: computer

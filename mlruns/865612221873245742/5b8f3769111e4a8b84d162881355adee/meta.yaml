@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/865612221873245742/5b8f3769111e4a8b84d162881355adee/artifacts
+end_time: 1757911799626
+entry_point_name: ''
+experiment_id: '865612221873245742'
+lifecycle_stage: active
+run_id: 5b8f3769111e4a8b84d162881355adee
+run_name: debonair-cub-615
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757911799557
+status: 3
+tags: []
+user_id: computer

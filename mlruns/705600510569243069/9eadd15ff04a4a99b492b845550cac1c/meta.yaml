@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/705600510569243069/9eadd15ff04a4a99b492b845550cac1c/artifacts
+end_time: 1757911605123
+entry_point_name: ''
+experiment_id: '705600510569243069'
+lifecycle_stage: active
+run_id: 9eadd15ff04a4a99b492b845550cac1c
+run_name: random_forest_10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757911605088
+status: 4
+tags: []
+user_id: computer

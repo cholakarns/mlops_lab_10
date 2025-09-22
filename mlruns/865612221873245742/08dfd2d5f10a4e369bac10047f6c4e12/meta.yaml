@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/865612221873245742/08dfd2d5f10a4e369bac10047f6c4e12/artifacts
+end_time: 1757912282635
+entry_point_name: ''
+experiment_id: '865612221873245742'
+lifecycle_stage: active
+run_id: 08dfd2d5f10a4e369bac10047f6c4e12
+run_name: efficient-smelt-881
+run_uuid: 08dfd2d5f10a4e369bac10047f6c4e12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757912282598
+status: 3
+tags: []
+user_id: computer

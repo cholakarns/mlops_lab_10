@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/mlflow_lab/mlruns/865612221873245742/b163c4ae458c4d91aa0170fdff26cf73/artifacts
+end_time: 1757911445307
+entry_point_name: ''
+experiment_id: '865612221873245742'
+lifecycle_stage: active
+run_id: b163c4ae458c4d91aa0170fdff26cf73
+run_name: classy-skink-32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757911445245
+status: 3
+tags: []
+user_id: computer
