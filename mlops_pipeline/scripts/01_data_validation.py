@@ -45,8 +45,8 @@ def main():
             mlflow.log_metric(f"target_count_{k}", v)
 
         # log artifacts
-        mlflow.log_artifact(str(raw_path))
-        mlflow.log_artifact(str(report_path))
+        mlflow.log_artifact(str(raw_path), artifact_path="raw_bc.csv")
+        mlflow.log_artifact(str(report_path), artifact_path="validation_report.json")
 
     print(f"[OK] Saved raw -> {raw_path}")
     print(f"[OK] Saved report -> {report_path}")
