@@ -40,7 +40,7 @@ def main():
     test_df.to_csv(test_path, index=False)
     joblib.dump(scaler, scaler_path)
 
-    mlflow.set_tracking_uri(os.environ.get("MLFLOW_TRACKING_URI", "file:./mlruns"))
+    mlflow.set_tracking_uri("mlruns")
     mlflow.set_experiment(EXPERIMENT)
     with mlflow.start_run(run_name="02_data_preprocessing") as run:
         mlflow.log_param("test_size", 0.2)

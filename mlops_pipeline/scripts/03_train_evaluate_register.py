@@ -33,7 +33,7 @@ def main():
     preprocess_run_id = sys.argv[1]
     C_val = float(sys.argv[2]) if len(sys.argv) >= 3 else 1.0
 
-    mlflow.set_tracking_uri(os.environ.get("MLFLOW_TRACKING_URI", "file:./mlruns"))
+    mlflow.set_tracking_uri("mlruns")
     mlflow.set_experiment(EXPERIMENT)
 
     art_dir = download_all_artifacts(preprocess_run_id)

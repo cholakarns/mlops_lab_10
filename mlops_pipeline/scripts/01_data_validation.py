@@ -31,8 +31,7 @@ def main():
         json.dump(report, f, indent=2)
 
     # ตั้งค่า MLflow tracking URI (default เป็น ./mlruns)
-    mlflow_tracking_uri = os.environ.get("MLFLOW_TRACKING_URI", f"file://{Path('mlruns').resolve()}")
-    mlflow.set_tracking_uri(mlflow_tracking_uri)
+    mlflow.set_tracking_uri("mlruns")
     mlflow.set_experiment(EXPERIMENT)
 
     with mlflow.start_run(run_name="01_data_validation"):

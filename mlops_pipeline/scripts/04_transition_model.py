@@ -13,7 +13,7 @@ def main():
     artifacts = base / "artifacts"
     raw_path = artifacts / "raw_bc.csv"
 
-    mlflow.set_tracking_uri(os.environ.get("MLFLOW_TRACKING_URI", "file:./mlruns"))
+    mlflow.set_tracking_uri("mlruns")
 
     # พยายามโหลดจาก Model Registry ก่อน
     model_uri = f"models:/{MODEL_NAME}/{STAGE}"
