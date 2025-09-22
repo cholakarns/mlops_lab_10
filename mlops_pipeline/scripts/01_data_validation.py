@@ -8,7 +8,8 @@ EXPERIMENT = "BC Wisconsin - Data Validation"
 
 def main():
     # ใช้ relative path แบบ cross-platform
-    artifacts = Path("artifacts")
+    base_path = Path(__file__).parent.parent.parent # This will be the root of the project
+    artifacts = base_path / "artifacts"
     artifacts.mkdir(parents=True, exist_ok=True)
 
     # โหลด dataset จาก sklearn
