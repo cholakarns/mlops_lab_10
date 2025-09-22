@@ -7,20 +7,20 @@ from sklearn.datasets import load_breast_cancer
 EXPERIMENT = "BC Wisconsin - Data Validation"
 
 def main():
-    # ใช้ relative path แบบ cross-platform
-    base_path = Path(__file__).parent.parent.parent # This will be the root of the project
+    # Use a base path to construct relative paths
+    base_path = Path(__file__).resolve().parents[2]
     artifacts = base_path / "artifacts"
     artifacts.mkdir(parents=True, exist_ok=True)
 
-    # โหลด dataset จาก sklearn
+    # Load dataset from sklearn
     ds = load_breast_cancer(as_frame=True)
-    df = ds.frame  # มีคอลัมน์ 'target' อยู่แล้ว (0=malignant, 1=benign)
+    df = ds.frame
 
-    # บันทึก raw dataset
+    # Save raw dataset
     raw_path = artifacts / "raw_bc.csv"
     df.to_csv(raw_path, index=False)
 
-    # สร้าง validation report
+    # Create validation report
     report = {
         "n_rows": int(df.shape[0]),
         "n_cols": int(df.shape[1]),
@@ -31,12 +31,12 @@ def main():
     with report_path.open("w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
 
-    # ตั้งค่า MLflow tracking URI (default เป็น ./mlruns)
+    # Set MLflow tracking URI
     mlflow.set_tracking_uri("mlruns")
     mlflow.set_experiment(EXPERIMENT)
 
     with mlflow.start_run(run_name="01_data_validation"):
-        # log params และ metrics
+        # Log params and metrics
         mlflow.log_param("dataset", "breast_cancer_wisconsin")
         mlflow.log_metric("n_rows", report["n_rows"])
         mlflow.log_metric("n_cols", report["n_cols"])
@@ -44,9 +44,9 @@ def main():
         for k, v in report["target_counts"].items():
             mlflow.log_metric(f"target_count_{k}", v)
 
-        # log artifacts
-        mlflow.log_artifact(str(raw_path), artifact_path="raw_bc.csv")
-        mlflow.log_artifact(str(report_path), artifact_path="validation_report.json")
+        # Log artifacts using paths relative to the project root
+        mlflow.log_artifact(str(raw_path.relative_to(base_path)))
+        mlflow.log_artifact(str(report_path.relative_to(base_path)))
 
     print(f"[OK] Saved raw -> {raw_path}")
     print(f"[OK] Saved report -> {report_path}")
